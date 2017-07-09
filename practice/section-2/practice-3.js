@@ -14,7 +14,7 @@ function countSameElements(collection)
 			{
 				if(collection[i][0]==result[j].name)
 				{
-					result[j].summary+=parseInt(collection[i].match(/\d+/g)[0]);
+					result[j].summary+=parseInt(collection[i].match(/\d+/g));
 					reg=false;
 				}
 
@@ -23,7 +23,7 @@ function countSameElements(collection)
 			{
 				result[n]=new Object();
 				result[n].name=collection[i][0];
-				result[n].summary=parseInt(collection[i].match(/\d+/g)[0]);
+				result[n].summary=parseInt(collection[i].match(/\d+/g));
 				count=1;
 				n++;
 			}
